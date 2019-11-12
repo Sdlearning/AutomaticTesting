@@ -71,9 +71,7 @@
 					"raw": "https://lion-acc.ins.local/ASSIST_WSP/PolicyEnd.svc",
 					"protocol": "https",
 					"host": [
-						"lion-acc",
-						"ins",
-						"local"
+						"lion-acc.ins.local"						
 					],
 					"path": [
 						"ASSIST_WSP",

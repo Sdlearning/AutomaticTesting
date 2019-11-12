@@ -17,9 +17,7 @@
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"var jsonObject = xml2Json(responseBody);\r",
-							"console.log(jsonObject);\r",
-							"tests[\"Check Response\"] = jsonObject['s:Envelope']['s:Body'].PolicyEndProcessResponse.ReplyMessages.Replymessage_Web.Status === \"F\";"
+							""
 						],
 						"type": "text/javascript"
 					}

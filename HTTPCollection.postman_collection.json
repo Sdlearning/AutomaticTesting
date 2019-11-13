@@ -36,7 +36,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://siov21374.ins-dev.local/POSTMAN/ClaimPolicyLife.svc?Wsdl",
+					"raw": "http://siov21374.ins-dev.local/POSTMAN/ClaimPolicyLife.svc?singleWsdl",
 					"protocol": "http",
 					"host": [
 						"siov21374",

@@ -14,7 +14,9 @@
 					"script": {
 						"id": "c5451357-525a-400e-aaa2-1b390006a704",
 						"exec": [
-							""
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -71,7 +73,9 @@
 					"raw": "https://lion-acc.ins.local/ASSIST_WSP/PolicyEnd.svc",
 					"protocol": "https",
 					"host": [
-						"lion-acc.ins.local"						
+						"lion-acc",
+						"ins",
+						"local"
 					],
 					"path": [
 						"ASSIST_WSP",

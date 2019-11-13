@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "b59ea20d-eadd-428d-89a0-7da92a16d186",
+		"name": "HTTPCollection",
+		"description": "To test HTTP request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HTTPRequest",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://Insurer/SoldProductIL/ClaimPolicyLifeReadClaimPolicyLifeRequest\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:cla=\"http://Insurer/SoldProductIL/ClaimPolicyLife\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <cla:ReadClaimPolicyLife>\r\n         <cla:PolicyNumber>12345678</cla:PolicyNumber>\r\n      </cla:ReadClaimPolicyLife>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://siov21374.ins-dev.local/POSTMAN/ClaimPolicyLife.svc?singleWsdl",
+					"protocol": "http",
+					"host": [
+						"siov21374",
+						"ins-dev",
+						"local"
+					],
+					"path": [
+						"POSTMAN",
+						"ClaimPolicyLife.svc"
+					],
+					"query": [
+						{
+							"key": "singleWsdl",
+							"value": null
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
